@@ -1,0 +1,35 @@
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		String str = "Eehllooh";
+		String strnew = str.toLowerCase(); //to avoid Considering uppercase as different
+		Main m = new Main();
+		m.findFirstDuplicateCharacter(strnew);
+	}
+	
+	public void findFirstDuplicateCharacter(String s)
+	{
+	     HashMap<String , Integer> m = new HashMap<String, Integer>();
+	    for(int i = 0 ; i < s.length() ; i++)
+	    {
+	         char a = s.charAt(i);
+	         String s1 = Character.toString(a);
+	         if(! m.containsKey(s1))  // if not same then put in map 
+	         {
+	             
+	             m.put(s1,1);
+	         }
+	         else{  // print it if already in map
+	             System.out.println(s1);
+	             break;
+	         }
+	         
+	        
+	    }
+	    
+	}
+}
+
+Output 
+e
