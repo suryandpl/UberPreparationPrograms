@@ -1,0 +1,69 @@
+/******************************************************************************
+
+                            Online Java Compiler.
+                Code, Compile, Run and Debug java program online.
+Write your code in this editor and press "Run" button to execute it.
+
+*******************************************************************************/
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		System.out.println("Hello World");
+		Integer[] a ={1,2,3,4,5};
+		Integer[] b = {2,6,7,4,5};
+		Main m = new Main();
+		m.notPresent(a,b);
+	}
+	
+	public void notPresent(Integer[] arr , Integer[] arr2)
+	{
+	    Queue<Integer> q = new LinkedList<Integer>();
+	    Stack<Integer> s = new Stack<Integer>();
+ 	    Collections.addAll(q,arr);
+	    System.out.println(q);
+	    
+	    while(!q.isEmpty())
+	    {
+	         int there =0;
+	        int n = q.poll();
+	        for(int i =0 ; i<arr2.length ;i++)
+	        {
+	            System.out.println(n + " n");
+	            System.out.println(arr2[i]);
+	           
+	            if(n==arr2[i])
+	            {
+	                there =1;
+	                System.out.println("present in other array");
+	                break;
+	                
+	            }
+	            else{
+	                there =0;
+	            }
+	            
+	            
+	        }
+	        if(there==0){
+	                s.push(n);
+	            
+	            }
+	        
+	        
+	    }
+	    System.out.println("stack is" +s);
+	    while(!s.isEmpty())
+	    {
+	       // System.out.println(i);
+	        System.out.println(s.size());
+	       
+	        System.out.println("not in other array : " + s.pop());
+	    }
+	}
+}
+
+Output:
+
+not in other array : 3
+not in other array : 1
