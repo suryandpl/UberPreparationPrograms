@@ -13,7 +13,6 @@ public class ArrayPairs {
 	//Solution 1 :: 
 	public static void findPairs(int[] arr) {
 		Map<Integer,List<Integer[]>> map = new HashMap<Integer, List<Integer[]>>();
-		List<Integer[]> list = new ArrayList<Integer[]>();
 		for(int i=0;i<arr.length;i++) {
 			for(int j=i+1;j<arr.length;j++) {
 				int sum = arr[i]+arr[j];
@@ -23,6 +22,7 @@ public class ArrayPairs {
 					existList.add(pair);
 					map.put(sum, existList);
 				}else {
+					List<Integer[]> list = new ArrayList<Integer[]>();
 					list.add(pair);
 					map.put(sum, list);
 				}
