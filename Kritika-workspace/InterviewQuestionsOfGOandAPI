@@ -1,0 +1,23 @@
+Hi All, These are questions asked to me on Go and Rest API
+
+1. How to write simple hello world program in Go?
+2. How to run Go File from command prompt ?
+3. What is slice?
+4. Can Go function have more than one return type?
+5. Explain Structures in Go.
+6. What are pointers and what do you mean by * in pointer?
+7. Explain error handling in Go.
+8. What is fmt and why we need it ?
+9. What is the syntax to write comments in Go?
+10. Is Go case sensitive?
+11. How to define boolean datatype in Go?
+12. How is Go different from Java ? 
+13. Why Go is popular?
+14. What are routines?
+
+
+
+API
+1. Explain your working in Rest API. - I explained about post , put , get , delete and how I have used it .
+2. How to get data from postmapping to database ?
+
