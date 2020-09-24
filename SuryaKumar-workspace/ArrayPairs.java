@@ -68,6 +68,31 @@ public class ArrayPairs {
 		// TODO Auto-generated method stub
 		int arr[] = {1,2,3,4,5};
 		findPairs(arr);
+		
+		//for sol3
+		HashSet<Integer> set = new HashSet<Integer>();
+		for(int i=0;i<arr.length;i++) {
+			for(int j=i+1;j<arr.length;j++) {
+				set.add(arr[i]+arr[j]);
+			} 
+		}
+		System.out.println("Set : "+set);
+		for(Integer sumVal : set) { 
+			  findPairs(arr, sumVal); 
+		}		
 	}
+	//Solution 3::
+	static void findPairs(int[] arr, int sumVal) {
+		HashMap<Integer,Integer> map = new HashMap<Integer,Integer>();
+			System.out.println("Pairs for the value : "+sumVal);
+			for(int i=0;i<arr.length;i++) {
+				if(map.containsKey(arr[i])) {
+				System.out.println("("+arr[i]+", "+map.get(arr[i])+")");	
+				}
+				map.put(sumVal-arr[i],arr[i]);
+		
+		}
+	}
+	
 
 }
