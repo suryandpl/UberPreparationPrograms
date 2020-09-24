@@ -1,0 +1,44 @@
+class Anagram {
+ 
+   public static boolean isAnagram(String str1, String str2) {
+ 
+      /*If both strings is of different length,
+        then it's not an anagram */
+      if(str1.length() != str2.length())
+         return false;
+ 
+       //Create an array of size 256
+       int[] countarr = new int[256];
+ 
+       for(int i = 0; i < str1.length(); i++) {
+          //Increment character count for str1
+          countarr[str1.charAt(i)]++;
+ 
+         //decrement character count for str2
+         countarr[str2.charAt(i)]--;
+       }
+ 
+       for(int j = 0; j < countarr.length; j++) {
+          //if it's not zero
+          if( countarr[j] != 0) {
+              return false;
+          }
+       }
+ 
+       return true;
+  }
+ 
+   public static void main (String[] args) { 
+      Scanner in = new Scanner(System.in);
+ 
+      //String input
+      String str1 = in.nextLine();
+      String str2 = in.nextLine();
+ 
+      if(isAnagram(str1, str2)) {
+          System.out.println("Anagram");
+      } else {
+         System.out.println("Not an Anagram");
+      }
+  }
+}
