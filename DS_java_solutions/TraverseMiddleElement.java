@@ -47,10 +47,6 @@ public class TraverseMiddleElement {
 
 		Node temp = head;
 
-		/*
-		 * Traverse a list and check if it not points to null. If it points to null, It
-		 * means there is no node present after that and we need to end the loop.
-		 */
 		while (temp != null) {
 			System.out.println(temp.data);
 
