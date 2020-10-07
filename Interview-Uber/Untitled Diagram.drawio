@@ -1,0 +1,49 @@
+<mxfile host="app.diagrams.net" modified="2020-10-07T10:12:32.609Z" agent="5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36" etag="LkXdvUpxxxAVHkVY9NpP" version="13.7.5" type="github">
+  <diagram id="zXA05SA7bMd2i9HYTewJ" name="Page-1">
+    <mxGraphModel dx="868" dy="482" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="850" pageHeight="1100" background="#ffffff" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="w-5SZ48xRl6N_I1CwLYv-1" value="Product Catalog&lt;br&gt;Service" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="400" y="140" width="140" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="w-5SZ48xRl6N_I1CwLYv-2" value="MySQL" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" parent="1" vertex="1">
+          <mxGeometry x="670" y="140" width="60" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="w-5SZ48xRl6N_I1CwLYv-3" value="" style="endArrow=classic;startArrow=classic;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="w-5SZ48xRl6N_I1CwLYv-1" target="w-5SZ48xRl6N_I1CwLYv-2" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="380" y="190" as="sourcePoint" />
+            <mxPoint x="430" y="140" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="w-5SZ48xRl6N_I1CwLYv-4" value="From Other microservices(User)" style="whiteSpace=wrap;html=1;shape=mxgraph.basic.roundRectCallout;dx=30;dy=15;size=5;boundedLbl=1;" parent="1" vertex="1">
+          <mxGeometry x="140" y="140" width="130" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="w-5SZ48xRl6N_I1CwLYv-6" value="Lookup product" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" parent="1" vertex="1">
+          <mxGeometry x="300" y="140" width="100" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="w-5SZ48xRl6N_I1CwLYv-7" value="Lookup product" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" parent="1" vertex="1">
+          <mxGeometry x="560" y="150" width="100" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="w-5SZ48xRl6N_I1CwLYv-8" value="" style="endArrow=classic;html=1;exitX=0;exitY=0;exitDx=130;exitDy=18.75;exitPerimeter=0;entryX=1;entryY=0.85;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="w-5SZ48xRl6N_I1CwLYv-4" target="w-5SZ48xRl6N_I1CwLYv-6" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="300" y="160" as="sourcePoint" />
+            <mxPoint x="390" y="150" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="w-5SZ48xRl6N_I1CwLYv-9" value="" style="endArrow=classic;html=1;entryX=0;entryY=0;entryDx=130;entryDy=56.25;entryPerimeter=0;" parent="1" target="w-5SZ48xRl6N_I1CwLYv-4" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="400" y="196" as="sourcePoint" />
+            <mxPoint x="302" y="206" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="w-5SZ48xRl6N_I1CwLYv-10" value="JSON response" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" parent="1" vertex="1">
+          <mxGeometry x="290" y="200" width="100" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="w-5SZ48xRl6N_I1CwLYv-11" value="&lt;div&gt;{&lt;/div&gt;&lt;div&gt;&amp;nbsp; &quot;userId&quot; : 1,&lt;/div&gt;&lt;div&gt;&amp;nbsp; &quot;Items&quot;:[&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; {&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &quot;productId&quot;:1,&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &quot;productName&quot;:&quot;shirt&quot;,&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &quot;productDescription&quot;:&quot;white color shirt&quot;,&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &quot;price&quot; : &quot;500&quot;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; },&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; {&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &quot;productId&quot;:2,&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &quot;productName&quot;:&quot;t-shirt&quot;,&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &quot;productDescription&quot;:&quot;red color T-shirt&quot;,&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &quot;price&quot; : &quot;600&quot;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; }&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; ]&lt;/div&gt;&lt;div&gt;}&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" parent="1" vertex="1">
+          <mxGeometry x="230" y="230" width="240" height="240" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
