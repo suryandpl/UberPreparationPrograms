@@ -93,6 +93,53 @@ public class ArrayPairs {
 		
 		}
 	}
+	//solution :: 4
+		static void findPairs1(int[] arr){
+		HashMap<Integer,HashSet<Integer[]>> map = new HashMap<Integer,HashSet<Integer[]>>();
+		for(int i=0;i<arr.length;i++){
+			for(int j=i+1;j<arr.length;j++){
+				//skiping the same elements like (2,2)
+				if(arr[i] != arr[j]){			
+					int sum = arr[i]+arr[j];
+					Integer[] pair = {arr[i],arr[j]};
+
+					if(map.containsKey(sum)){
+						HashSet<Integer[]> existPair = map.get(sum);
+						boolean notExist =false;
+						//skiping the pair if already exists(duplicates)
+						for(Integer[] existArr : existPair){ 
+							if(existArr[0]!=arr[i] && existArr[1]!=arr[j]){
+								notExist=true;
+							}else{
+								notExist=false;
+								//System.out.println("Pair exists already"+(arr[i]+","+arr[j]));
+								break;
+							}
+						}
+						if(notExist) {
+							existPair.add(pair);
+						}
+					}else {
+						HashSet<Integer[]> set = new HashSet<Integer[]>();
+						set.add(pair);
+						map.put(sum,set);
+					}
+				}
+			}
+		}
+		Set<Integer> keys = map.keySet();
+		for(Integer key : keys) {
+			
+			HashSet<Integer[]> value = map.get(key);
+			if(value.size()>1) {
+				System.out.print(key+" array pairs are : [");
+				for(Integer[] arr1 : value) {
+					System.out.print(Arrays.deepToString(arr1));
+				}
+				System.out.println("]");
+			}
+		}
+	}
 	
 
 }
